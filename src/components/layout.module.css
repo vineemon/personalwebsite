@@ -132,13 +132,13 @@ a:active {
 }
 
 .profile-images {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
   border-radius: 2%;
   height: 25%;
-  text-align: left;
-  display: block;
+  display: block !important;
   width: 25%;
+  float: none !important;
 }
 
 .skyline-images {
