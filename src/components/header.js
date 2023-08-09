@@ -3,6 +3,7 @@ import {
   header,
 } from "./layout.module.css";
 import github from "../images/github.png";
+import linkedin from "../images/linkedin.png";
 import { StyledButton } from "./styles"
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -19,8 +20,7 @@ const Header = ({ text, link }) => {
           variant="contained"
           color="primary"
           style={{
-            backgroundImage:
-              "url(https://dxanokv0vp6kj.cloudfront.net/packs/media/images/icons/linkedin_circle-02dff0f506f77e7f2e17c0056c158ae7.svg)",
+            backgroundImage: `url(${linkedin})`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center center",
             marginLeft: "auto",
