@@ -22,18 +22,15 @@ const IndexPage = () => {
       <hr />
       <StaticImage
         alt="vineet"
-        src="../images/home_photo.jpg"
+        src="../images/home_photo.jpeg"
         style={{ display: "block" }}
         className={images}
       />
       <p className={siteTitle}>Software Engineer based in New York City</p>
       <p className={profileDesc}>
-        I’m currently a software engineer at Amazon Ads in NYC.
-      </p>
-      <p className={profileDesc}>
-        Prior to my professional career, I earned my Master’s in Computer and
-        Electrical Engineering at Georgia Tech where I published a Thesis on
-        Machine Learning Hardware Accelerators.
+        I’m currently a software engineer at Amazon Ads in NYC. Prior to my professional career,
+        I earned my Master’s in Computer and Electrical Engineering at Georgia Tech where I published a
+        Thesis on Machine Learning Hardware Accelerators.
       </p>
       <StyledButton
         href="https://www.intel.com/content/www/us/en/artificial-intelligence/posts/introducing-sigma.html"

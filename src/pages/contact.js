@@ -21,7 +21,7 @@ const IntroPage = () => {
 
       <StaticImage
         alt="skyline"
-        src="../images/Skyline.jpg"
+        src="../images/city.jpg"
         className={skylineImages}
       />
       <div
