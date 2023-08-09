@@ -9,14 +9,14 @@ import {
   profileTitle,
   profileImages,
 } from "../components/layout.module.css";
-import { StyledButton } from "../components/styles";
+import { StyledButton, CenterButton } from "../components/styles";
 import Header from "../components/header";
 
 // markup
 const IndexPage = () => {
   return (
     <div className={container}>
-      <Header text="Contact Info" link="/contact"></Header>
+      <Header text="Contact Me" link="/contact"></Header>
       <hr />
       <p className={siteTitle}>Vineet Nadella</p>
       <hr />
@@ -29,22 +29,8 @@ const IndexPage = () => {
       <p className={siteTitle}>Software Engineer based in New York City</p>
       <p className={profileDesc}>
         I’m currently a software engineer at Amazon Ads in NYC. Prior to my professional career,
-        I earned my Master’s in Computer and Electrical Engineering at Georgia Tech where I published a
-        Thesis on Machine Learning Hardware Accelerators.
+        I earned my Master’s in Computer and Electrical Engineering at Georgia Tech in Atlanta. Go Jackets!
       </p>
-      <StyledButton
-        href="https://www.intel.com/content/www/us/en/artificial-intelligence/posts/introducing-sigma.html"
-        variant="contained"
-        color="primary"
-        style={{
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center center",
-          margin: "10px 10px 10px 20px",
-          fontSize: "30px",
-        }}
-      >
-        SIGMA
-      </StyledButton>
       <StaticImage
         alt="vineet"
         src="../images/synergy.jpeg"
@@ -56,19 +42,15 @@ const IndexPage = () => {
         (HPCA) 2020 presented Best Paper Award to SIGMA: A Spare and Irregular
         Accelerator with Flexible Interconnects for DNN Training.
       </p>
-      <StyledButton
-        href="https://github.com/scalesim-project/scale-sim-v2"
-        variant="contained"
-        color="primary"
-        style={{
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center center",
-          fontSize: "30px",
-          margin: "10px 10px 10px 20px",
-        }}
-      >
-        SCALE Sim
-      </StyledButton>
+      <CenterButton
+              href="https://www.intel.com/content/www/us/en/artificial-intelligence/posts/introducing-sigma.html"
+              variant="contained"
+              color="primary"
+              style={{
+              }}
+            >
+              SIGMA
+            </CenterButton>
       <StaticImage
         alt="scale-sim"
         src="../images/scalesim.png"
@@ -81,19 +63,15 @@ const IndexPage = () => {
         refreshed version of the simulator with feature enhancements,
         restructured code to aid feature additions, and ease of distribution.
       </p>
-      <StyledButton
-        href="https://smartech.gatech.edu/handle/1853/64650"
-        variant="contained"
-        color="primary"
-        style={{
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center center",
-          fontSize: "30px",
-          margin: "10px 10px 10px 20px",
-        }}
-      >
-        Thesis
-      </StyledButton>
+      <CenterButton className={profileDesc}
+              href="https://github.com/scalesim-project/scale-sim-v2"
+              variant="contained"
+              color="primary"
+              style={{
+              }}
+            >
+              SCALE Sim
+            </CenterButton>
       <StaticImage
         alt="skyline"
         src="../images/thesis.png"
@@ -104,6 +82,15 @@ const IndexPage = () => {
         Thesis on Investigating Opportunities and Challenges in Modeling and
         Designing Scale-Out DNN Accelerators
       </p>
+      <CenterButton
+              href="https://smartech.gatech.edu/handle/1853/64650"
+              variant="contained"
+              color="primary"
+              style={{
+              }}
+            >
+              Thesis
+            </CenterButton>
     </div>
   );
 };

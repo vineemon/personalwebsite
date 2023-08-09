@@ -132,11 +132,12 @@ a:active {
 }
 
 .profile-images {
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 2%;
   height: 25%;
   text-align: left;
   display: block;
-  margin-left: 20px;
   width: 25%;
 }
 
@@ -150,7 +151,8 @@ a:active {
 }
 
 .profile-desc {
-  text-align: left;
+  text-align: center;
+  font-size: 25px;
   padding: 2px 32px;
   color: white;
 }

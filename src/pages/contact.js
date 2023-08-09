@@ -14,11 +14,15 @@ import Header from "../components/header";
 const IntroPage = () => {
   return (
     <div className={container}>
-      <Header text="Back to Home" link="/"></Header>
+      <Header text="Home" link="/"></Header>
       <hr />
-      <p className={siteTitle}>Contact Info</p>
+      <p className={siteTitle}>Contact Me</p>
       <hr />
-
+      <div>
+          <div className={contactTitle}>Vineet Nadella</div>
+          <div className={contactItem}>nadella.vineet@gmail.com</div>
+          <div className={contactItem}>(678) 780 2737</div>
+      </div>
       <StaticImage
         alt="skyline"
         src="../images/city.jpg"
@@ -31,11 +35,6 @@ const IntroPage = () => {
           marginLeft: "2.5%",
         }}
       ></div>
-      <div>
-        <div className={contactTitle}>Vineet Nadella</div>
-        <div className={contactItem}>nadella.vineet@gatech.edu</div>
-        <div className={contactItem}>(678) 780 2737</div>
-      </div>
     </div>
   );
 };

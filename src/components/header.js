@@ -24,6 +24,7 @@ const Header = ({ text, link }) => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center center",
             marginLeft: "auto",
+            backgroundSize: "35%",
             height: "40px"
           }}
         ></StyledButton>
