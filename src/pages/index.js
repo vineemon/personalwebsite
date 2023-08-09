@@ -22,19 +22,13 @@ const IndexPage = () => {
       <hr />
       <StaticImage
         alt="vineet"
-        src="../images/head_shot.jpg"
+        src="../images/home_photo.jpg"
         style={{ display: "block" }}
         className={images}
       />
-      <p className={siteTitle}>Software engineer based in Seattle, WA.</p>
+      <p className={siteTitle}>Software Engineer based in New York City</p>
       <p className={profileDesc}>
-        I’m currently a software engineer working at Amazon.com in the Supply
-        Chain Technologies organization. As a engineer in the Retail space, I’ve
-        lowered fulfillment costs using customer-driven software development
-        taking into account business goals while balancing technology
-        requirements. I’ve designed and implemented advanced workflows covering
-        optimization and machine learning models saving Amazon WW Operations{" "}
-        {">"}$1M per month.
+        I’m currently a software engineer at Amazon Ads in NYC.
       </p>
       <p className={profileDesc}>
         Prior to my professional career, I earned my Master’s in Computer and
@@ -105,7 +99,7 @@ const IndexPage = () => {
       </StyledButton>
       <StaticImage
         alt="skyline"
-        src="../images/city.jpg"
+        src="../images/thesis.png"
         className={profileImages}
         style={{ objectFit: "contain" }}
       />
