@@ -21,7 +21,7 @@ const IntroPage = () => {
       <div>
           <div className={contactTitle}>Vineet Nadella</div>
           <div className={contactItem}>nadella.vineet@gmail.com</div>
-          <div className={contactItem}>(678) 780 2737</div>
+          <div className={contactItem}>(862) 346-7356</div>
       </div>
       <StaticImage
         alt="skyline"
