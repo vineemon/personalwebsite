@@ -80,7 +80,6 @@ const Header = ({ link }) => {
           PaperProps={{
             style: {
               maxHeight: ITEM_HEIGHT * 4.5,
-              width: "20ch",
               backgroundColor: "rgba(8, 40, 79, 1"
             },
           }}
