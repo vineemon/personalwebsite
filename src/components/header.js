@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useMediaQuery } from "react-responsive";
 import { header } from "./layout.module.css";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
@@ -10,8 +9,6 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { StyledButton } from "./styles";
-
-const options = ["Experience", "Work", "Contact"];
 
 const ITEM_HEIGHT = 48;
 
@@ -72,7 +69,6 @@ const Header = ({ link }) => {
           id="long-menu"
           MenuListProps={{
             "aria-labelledby": "long-button",
-            "z-index":  "2",
           }}
           anchorEl={anchorEl}
           open={open}
@@ -87,7 +83,7 @@ const Header = ({ link }) => {
         >
           <MenuItem href="/experience" component="a" style={{color:"white", fontFamily:"avenir" }}>
             Experience
-          </MenuItem>
+          </MenuItem> 
           <MenuItem href="/work" component="a" style={{color:"white", fontFamily:"avenir"  }}>
             Work
           </MenuItem>
