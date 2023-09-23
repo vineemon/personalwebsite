@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useMediaQuery } from "react-responsive";
 import { header } from "./layout.module.css";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
@@ -84,14 +83,14 @@ const Header = ({ link }) => {
             },
           }}
         >
-          <MenuItem href="/experience" component="a" style={{color:"white", fontFamily:"avenir" }}>
-            Experience
+          <MenuItem style={{color:"white", fontFamily:"avenir" }}>
+          <a href="/experience">Experience</a>
           </MenuItem>
-          <MenuItem href="/work" component="a" style={{color:"white", fontFamily:"avenir"  }}>
-            Work
+          <MenuItem style={{color:"white", fontFamily:"avenir"  }}>
+          <a href="/work">Work</a>
           </MenuItem>
-          <MenuItem href="/contact" component="a" style={{color:"white", fontFamily:"avenir"  }}>
-            Contact
+          <MenuItem style={{color:"white", fontFamily:"avenir"  }}>
+            <a href="/contact">Contact</a>
           </MenuItem>
         </Menu>
       </div>

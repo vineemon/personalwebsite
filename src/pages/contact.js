@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useMediaQuery } from "react-responsive";
+import {isMobile} from 'react-device-detect';
 import {
   container,
   siteTitle,
@@ -14,7 +15,6 @@ import initials from "../images/home_photo.jpeg";
 // markup
 const IntroPage = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
-  const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
 
   return (
     <div className={container} border-radius="1000px">
@@ -23,7 +23,7 @@ const IntroPage = () => {
       <p className={siteTitle}>Contact Me</p>
       <hr />
       {!isTabletOrMobile && Content()}
-      {(isTabletOrMobile || isPortrait) && MobileContent()}
+      {(isTabletOrMobile || isMobile) && MobileContent()}
     </div>
   );
 };
