@@ -5,10 +5,7 @@ import {
   container,
   siteTitle,
   images,
-  profileDesc,
-  profileImages,
 } from "../components/layout.module.css";
-import { CenterButton } from "../components/styles";
 import Header from "../components/header";
 
 // markup

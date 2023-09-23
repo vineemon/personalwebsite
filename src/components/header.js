@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useMediaQuery } from "react-responsive";
 import { header } from "./layout.module.css";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
@@ -79,18 +80,19 @@ const Header = ({ link }) => {
           PaperProps={{
             style: {
               maxHeight: ITEM_HEIGHT * 4.5,
+              width: "15ch",
               backgroundColor: "rgba(8, 40, 79, 1"
             },
           }}
         >
-          <MenuItem style={{color:"white", fontFamily:"avenir" }}>
-          <a href="/experience">Experience</a>
+          <MenuItem href="/experience" component="a" style={{color:"white", fontFamily:"avenir" }}>
+            Experience
           </MenuItem>
-          <MenuItem style={{color:"white", fontFamily:"avenir"  }}>
-          <a href="/work">Work</a>
+          <MenuItem href="/work" component="a" style={{color:"white", fontFamily:"avenir"  }}>
+            Work
           </MenuItem>
-          <MenuItem style={{color:"white", fontFamily:"avenir"  }}>
-            <a href="/contact">Contact</a>
+          <MenuItem href="/contact" component="a" style={{color:"white", fontFamily:"avenir"  }}>
+            Contact
           </MenuItem>
         </Menu>
       </div>

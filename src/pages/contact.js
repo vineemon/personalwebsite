@@ -22,8 +22,9 @@ const IntroPage = () => {
       <hr />
       <p className={siteTitle}>Contact Me</p>
       <hr />
-      {!isTabletOrMobile && Content()}
-      {(isTabletOrMobile || isMobile) && MobileContent()}
+      {/* {!isTabletOrMobile && Content()} */}
+      {/* {(isTabletOrMobile || isMobile) && MobileContent()} */}
+      { MobileContent() }
     </div>
   );
 };
