@@ -1,0 +1,200 @@
+
+.layout-module--container--YM7Lx {
+  font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  color: rgba(8, 40, 79, var(--text-opacity));
+  padding-bottom: 10px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #08284f;
+}
+
+.layout-module--heading--2By-2 {
+  color: white;
+  text-align: center;
+}
+.layout-module--nav-links--1VlO2 {
+  list-style: none;
+  font-weight: bold;
+  font-size: 16;
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+}
+
+.layout-module--search-button--e6zj9 {
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.layout-module--input-data--2sIE0 {
+  list-style: none;
+  font-weight: bold;
+  font-size: 16;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.layout-module--input-data-item--3Mhfs {
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  padding: 16px 32px;
+  -moz-box-align: center;
+  text-decoration: none;
+}
+
+.layout-module--input-data-text--WgnXN {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+.layout-module--flexbox-container--1-MW4 {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.layout-module--nav-link-item--31U8T {
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  -moz-box-align: center;
+  text-decoration: none;
+  padding: 16px 32px;
+  background-color: orange;
+  margin-right: 20px;
+}
+
+.layout-module--nav-link-text--ExV28 {
+  color: black;
+}
+
+.layout-module--contact-title--2ti-6 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  padding: 16px 32px;
+}
+
+.layout-module--contact-item--3vWDO {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  flex-basis: auto;
+  padding: 10px 32px;
+}
+
+.layout-module--site-title--16llq {
+  font-size: 3rem;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+.layout-module--images--2-rLc {
+  border-radius: 50%;
+  height: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  margin-top: 2%;
+}
+
+.layout-module--profile-images--2wOfh {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2%;
+  height: 25%;
+  text-align: left;
+  display: block;
+  width: 25%;
+}
+
+.layout-module--skyline-images--2UrYP {
+  border-radius: 2%;
+  height: 90%;
+  display: block;
+  margin-left: 5%;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.layout-module--profile-desc--1Laaq {
+  text-align: center;
+  font-size: 25px;
+  padding: 2px 32px;
+  color: white;
+}
+
+.layout-module--profile-title--17rri {
+  text-align: left;
+  color: black;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 4px;
+  display: inline-block;
+  -moz-box-align: left;
+  text-decoration: none;
+  padding: 10px 32px;
+  font-size: 30px;
+  margin: 30px;
+  background-color: orange;
+}
+
+.layout-module--header--UmhLx {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+:root {
+  --swiper-theme-color: #007aff;
+}
+
+hr {
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+
+a {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="note" content="environment=development"><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><script src="localhost_files/socket.io.js"></script><link rel="stylesheet" href="localhost_files/commons.css"><style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-moz-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-moz-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style><style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  -moz-user-select: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+</style><style data-jss="" data-meta="MuiButton">
+.MuiButton-root {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+.MuiButton-root:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-root:hover.Mui-disabled {
+  background-color: transparent;
+}
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiButton-text {
+  padding: 6px 8px;
+}
+.MuiButton-textPrimary {
+  color: #3f51b5;
+}
+.MuiButton-textPrimary:hover {
+  background-color: rgba(63, 81, 181, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-textSecondary {
+  color: #f50057;
+}
+.MuiButton-textSecondary:hover {
+  background-color: rgba(245, 0, 87, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 5px 15px;
+}
+.MuiButton-outlined.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiButton-outlinedPrimary {
+  color: #3f51b5;
+  border: 1px solid rgba(63, 81, 181, 0.5);
+}
+.MuiButton-outlinedPrimary:hover {
+  border: 1px solid #3f51b5;
+  background-color: rgba(63, 81, 181, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlinedSecondary {
+  color: #f50057;
+  border: 1px solid rgba(245, 0, 87, 0.5);
+}
+.MuiButton-outlinedSecondary:hover {
+  border: 1px solid #f50057;
+  background-color: rgba(245, 0, 87, 0.04);
+}
+.MuiButton-outlinedSecondary.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-contained {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  background-color: #e0e0e0;
+}
+.MuiButton-contained:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  background-color: #d5d5d5;
+}
+.MuiButton-contained.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiButton-contained:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiButton-contained.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+.MuiButton-contained:hover.Mui-disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #3f51b5;
+}
+.MuiButton-containedPrimary:hover {
+  background-color: #303f9f;
+}
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #3f51b5;
+  }
+}
+.MuiButton-containedSecondary {
+  color: #fff;
+  background-color: #f50057;
+}
+.MuiButton-containedSecondary:hover {
+  background-color: #c51162;
+}
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #f50057;
+  }
+}
+.MuiButton-disableElevation {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:hover {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-focusVisible {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:active {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-disabled {
+  box-shadow: none;
+}
+.MuiButton-colorInherit {
+  color: inherit;
+  border-color: currentColor;
+}
+.MuiButton-textSizeSmall {
+  padding: 4px 5px;
+  font-size: 0.8125rem;
+}
+.MuiButton-textSizeLarge {
+  padding: 8px 11px;
+  font-size: 0.9375rem;
+}
+.MuiButton-outlinedSizeSmall {
+  padding: 3px 9px;
+  font-size: 0.8125rem;
+}
+.MuiButton-outlinedSizeLarge {
+  padding: 7px 21px;
+  font-size: 0.9375rem;
+}
+.MuiButton-containedSizeSmall {
+  padding: 4px 10px;
+  font-size: 0.8125rem;
+}
+.MuiButton-containedSizeLarge {
+  padding: 8px 22px;
+  font-size: 0.9375rem;
+}
+.MuiButton-fullWidth {
+  width: 100%;
+}
+.MuiButton-startIcon {
+  display: inherit;
+  margin-left: -4px;
+  margin-right: 8px;
+}
+.MuiButton-startIcon.MuiButton-iconSizeSmall {
+  margin-left: -2px;
+}
+.MuiButton-endIcon {
+  display: inherit;
+  margin-left: 8px;
+  margin-right: -4px;
+}
+.MuiButton-endIcon.MuiButton-iconSizeSmall {
+  margin-right: -2px;
+}
+.MuiButton-iconSizeSmall > *:first-child {
+  font-size: 18px;
+}
+.MuiButton-iconSizeMedium > *:first-child {
+  font-size: 20px;
+}
+.MuiButton-iconSizeLarge > *:first-child {
+  font-size: 22px;
+}
+</style><style data-jss="" data-meta="WithStyles(ForwardRef(Button))">
+.WithStyles\(ForwardRef\(Button\)\)-root-5 {
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Avenir, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,       Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji,        Segoe UI Symbol, Noto Color Emoji Apple;
+  border-radius: 3px;
+  background-color: transparent;
+}
+.WithStyles\(ForwardRef\(Button\)\)-label-6 {
+  text-transform: capitalize;
+}
+</style></head><body style=""><div id="___gatsby"><div style="outline: none;" tabindex="-1" id="gatsby-focus-wrapper"><div class="layout-module--container--YM7Lx"><header class="layout-module--header--UmhLx"><div data-gatsby-image-wrapper="" style="width: 15%;" class="gatsby-image-wrapper gatsby-image-wrapper-constrained"><div style="max-width: 1920px; display: block;"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height='1080' width='1920' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E" style="max-width: 100%; display: block; position: static;"></div><div aria-hidden="true" data-placeholder-image="" style="opacity: 0; transition: opacity 500ms linear 0s; background-color: rgb(8, 8, 8); position: absolute; inset: 0px; object-fit: cover;"></div><picture><source type="image/webp" srcset="localhost_files/initials_002.webp 480w, localhost_files/initials_003.webp 960w, localhost_files/initials.webp 1920w" sizes="(min-width: 1920px) 1920px, 100vw"><img style="object-fit: cover; opacity: 1;" data-main-image="" sizes="(min-width: 1920px) 1920px, 100vw" decoding="async" src="localhost_files/initials_003.png" srcset="localhost_files/initials_002.png 480w, localhost_files/initials.png 960w, localhost_files/initials_003.png 1920w" alt="vineet" width="1920" height="1080"></picture><noscript></noscript></div><a class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-5 MuiButton-contained MuiButton-containedPrimary" tabindex="0" aria-disabled="false" href="https://www.linkedin.com/in/vineet-nadella/" style="background-image: url(&quot;data:image/png;base64,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&quot;); background-repeat: no-repeat; background-position: center center; margin-left: auto; background-size: 35%; height: 40px;"><span class="MuiButton-label WithStyles(ForwardRef(Button))-label-6"></span><span class="MuiTouchRipple-root"></span></a><a class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-5 MuiButton-contained MuiButton-containedPrimary" tabindex="0" aria-disabled="false" href="https://github.com/vineemon" style="background-image: url(&quot;/static/github-6df3bfb77d244b09b822551cc8deef47.png&quot;); background-repeat: no-repeat; background-position: center center; background-size: 50%; height: 40px;"><span class="MuiButton-label WithStyles(ForwardRef(Button))-label-6"></span><span class="MuiTouchRipple-root"></span></a><a class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-5 MuiButton-contained MuiButton-containedPrimary" tabindex="0" aria-disabled="false" href="http://localhost:8000/contact"><span class="MuiButton-label WithStyles(ForwardRef(Button))-label-6">Contact Me</span><span class="MuiTouchRipple-root"></span></a></header><hr><p class="layout-module--site-title--16llq">Vineet Nadella</p><hr><div data-gatsby-image-wrapper="" style="display: block;" class="gatsby-image-wrapper gatsby-image-wrapper-constrained layout-module--images--2-rLc"><div style="max-width: 1536px; display: block;"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height='2048' width='1536' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E" style="max-width: 100%; display: block; position: static;"></div><div aria-hidden="true" data-placeholder-image="" style="opacity: 0; transition: opacity 500ms linear 0s; background-color: rgb(248, 248, 248); position: absolute; inset: 0px; object-fit: cover;"></div><picture><source type="image/webp" srcset="localhost_files/home_photo_002.webp 384w, localhost_files/home_photo_003.webp 768w, localhost_files/home_photo.webp 1536w" sizes="(min-width: 1536px) 1536px, 100vw"><img style="object-fit: cover; opacity: 1;" data-main-image="" sizes="(min-width: 1536px) 1536px, 100vw" decoding="async" src="localhost_files/home_photo.jpg" srcset="localhost_files/home_photo_002.jpg 384w, localhost_files/home_photo_003.jpg 768w, localhost_files/home_photo.jpg 1536w" alt="vineet" width="1536" height="2048"></picture><noscript></noscript></div><p class="layout-module--site-title--16llq">Software Engineer based in New York City</p><p class="layout-module--profile-desc--1Laaq">I’m
+ currently a software engineer at Amazon Ads in NYC. Prior to my 
+professional career, I earned my Master’s in Computer and Electrical 
+Engineering at Georgia Tech in Atlanta. Go Jackets!</p><a class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-5 MuiButton-contained MuiButton-containedPrimary" tabindex="0" aria-disabled="false" href="https://www.intel.com/content/www/us/en/artificial-intelligence/posts/introducing-sigma.html" style="background-repeat: no-repeat; background-position: center center; margin: 10px 10px 10px 20px; font-size: 30px;"><span class="MuiButton-label WithStyles(ForwardRef(Button))-label-6">SIGMA</span><span class="MuiTouchRipple-root"></span></a><div data-gatsby-image-wrapper="" style="object-fit: contain;" class="gatsby-image-wrapper gatsby-image-wrapper-constrained layout-module--profile-images--2wOfh"><div style="max-width: 740px; display: block;"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height='555' width='740' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E" style="max-width: 100%; display: block; position: static;"></div><div aria-hidden="true" data-placeholder-image="" style="opacity: 0; transition: opacity 500ms linear 0s; background-color: rgb(152, 184, 184); position: absolute; inset: 0px; object-fit: cover;"></div><picture><source type="image/webp" srcset="localhost_files/synergy_002.webp 185w, localhost_files/synergy_003.webp 370w, localhost_files/synergy.webp 740w" sizes="(min-width: 740px) 740px, 100vw"><img style="object-fit: cover; opacity: 1;" data-main-image="" sizes="(min-width: 740px) 740px, 100vw" decoding="async" src="localhost_files/synergy_003.jpg" srcset="localhost_files/synergy_002.jpg 185w, localhost_files/synergy.jpg 370w, localhost_files/synergy_003.jpg 740w" alt="vineet" width="740" height="555"></picture><noscript></noscript></div><p class="layout-module--profile-desc--1Laaq">IEEE
+ International Symposium on High-Performance Computer Architecture 
+(HPCA) 2020 presented Best Paper Award to SIGMA: A Spare and Irregular 
+Accelerator with Flexible Interconnects for DNN Training.</p><a class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-5 MuiButton-contained layout-module--profile-desc--1Laaq MuiButton-containedPrimary" tabindex="0" aria-disabled="false" href="https://github.com/scalesim-project/scale-sim-v2" style=""><span class="MuiButton-label WithStyles(ForwardRef(Button))-label-6">SCALE Sim</span><span class="MuiTouchRipple-root"></span></a><div data-gatsby-image-wrapper="" style="object-fit: contain;" class="gatsby-image-wrapper gatsby-image-wrapper-constrained layout-module--profile-images--2wOfh"><div style="max-width: 3329px; display: block;"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height='1376' width='3329' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E" style="max-width: 100%; display: block; position: static;"></div><div aria-hidden="true" data-placeholder-image="" style="opacity: 0; transition: opacity 500ms linear 0s; background-color: rgb(248, 248, 248); position: absolute; inset: 0px; object-fit: cover;"></div><picture><source type="image/webp" srcset="localhost_files/scalesim.webp 832w, localhost_files/scalesim_003.webp 1665w, localhost_files/scalesim_002.webp 3329w" sizes="(min-width: 3329px) 3329px, 100vw"><img style="object-fit: cover; opacity: 1;" data-main-image="" sizes="(min-width: 3329px) 3329px, 100vw" decoding="async" src="localhost_files/scalesim.png" srcset="localhost_files/scalesim_002.png 832w, localhost_files/scalesim_003.png 1665w, localhost_files/scalesim.png 3329w" alt="scale-sim" width="3329" height="1376"></picture><noscript></noscript></div><p class="layout-module--profile-desc--1Laaq">SCALE
+ Sim is a simulator for systolic array based accelerators for 
+Convolution, Feed Forward, and any layer that uses GEMMs. This is a 
+refreshed version of the simulator with feature enhancements, 
+restructured code to aid feature additions, and ease of distribution.</p><a class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-5 MuiButton-contained MuiButton-containedPrimary" tabindex="0" aria-disabled="false" href="https://smartech.gatech.edu/handle/1853/64650" style="background-repeat: no-repeat; background-position: center center; font-size: 30px; margin: 10px 10px 10px 20px;"><span class="MuiButton-label WithStyles(ForwardRef(Button))-label-6">Thesis</span><span class="MuiTouchRipple-root"></span></a><div data-gatsby-image-wrapper="" style="object-fit: contain;" class="gatsby-image-wrapper gatsby-image-wrapper-constrained layout-module--profile-images--2wOfh"><div style="max-width: 1021px; display: block;"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height='1173' width='1021' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E" style="max-width: 100%; display: block; position: static;"></div><div aria-hidden="true" data-placeholder-image="" style="opacity: 0; transition: opacity 500ms linear 0s; background-color: rgb(248, 248, 248); position: absolute; inset: 0px; object-fit: cover;"></div><picture><source type="image/webp" srcset="localhost_files/thesis_002.webp 255w, localhost_files/thesis_003.webp 511w, localhost_files/thesis.webp 1021w" sizes="(min-width: 1021px) 1021px, 100vw"><img style="object-fit: cover; opacity: 1;" data-main-image="" sizes="(min-width: 1021px) 1021px, 100vw" decoding="async" src="localhost_files/thesis_003.png" srcset="localhost_files/thesis.png 255w, localhost_files/thesis_002.png 511w, localhost_files/thesis_003.png 1021w" alt="skyline" width="1021" height="1173"></picture><noscript></noscript></div><p class="layout-module--profile-desc--1Laaq">Thesis on Investigating Opportunities and Challenges in Modeling and Designing Scale-Out DNN Accelerators</p></div></div><div id="gatsby-announcer" style="position: absolute; top: 0px; width: 1px; height: 1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border: 0px none;" aria-live="assertive" aria-atomic="true"></div></div><script src="localhost_files/polyfill.js" nomodule=""></script><script src="localhost_files/framework.js"></script><script src="localhost_files/commons.js"></script><div id="query-on-demand-indicator-element"></div><gatsby-qod></gatsby-qod></body></html>

@@ -8,6 +8,12 @@
   padding: 10px;
 }
 
+
+.container2 {
+  display: flex;
+  align-items: center;
+}
+
 body, html {
   height: 100%;
   margin: 0;
@@ -101,19 +107,14 @@ a:active {
 }
 
 .contact-title {
-  text-align: center;
   font-weight: bold;
   color: white;
   font-size: 30px;
-  padding: 16px 32px;
 }
 
 .contact-item {
-  text-align: center;
   color: white;
   font-size: 20px;
-  flex-basis: auto;
-  padding: 10px 32px;
 }
 
 .site-title {
@@ -130,6 +131,17 @@ a:active {
   margin-left: auto;
   margin-right: auto;
   width: 25%;
+  margin-top: 2%;
+}
+
+.contact {
+  display:flex;
+  float:left;
+  border-radius: 2%;
+  height: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   margin-top: 2%;
 }
 
