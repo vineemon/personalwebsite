@@ -126,11 +126,11 @@ a:active {
 }
 
 .images {
-  border-radius: 50%;
-  height: 25%;
+  border-radius: 2%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 75%;
   margin-top: 2%;
 }
 

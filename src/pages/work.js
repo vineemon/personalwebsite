@@ -4,8 +4,7 @@ import {
   container,
   siteTitle,
   profileDesc,
-  contactTitle,
-    skylineImages,
+  skylineImages,
 } from "../components/layout.module.css";
 import Header from "../components/header";
 

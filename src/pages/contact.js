@@ -1,13 +1,10 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import {
   container,
-  container2,
   siteTitle,
   contact,
   contactItem,
   contactTitle,
-  skylineImages,
 } from "../components/layout.module.css";
 import Header from "../components/header";
 import initials from "../images/home_photo.jpeg";

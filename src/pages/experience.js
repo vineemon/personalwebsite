@@ -3,7 +3,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import {
   container,
   siteTitle,
-  images,
   profileDesc,
   profileImages,
 } from "../components/layout.module.css";
@@ -18,6 +17,13 @@ const ExpPage = () => {
       <hr />
       <p className={siteTitle}>Experience</p>
       <hr />
+      <CenterButton
+        href="https://www.intel.com/content/www/us/en/artificial-intelligence/posts/introducing-sigma.html"
+        color="primary"
+        style={{}}
+      >
+        SIGMA
+      </CenterButton>
       <StaticImage
         alt="vineet"
         src="../images/synergy.jpeg"
@@ -30,12 +36,12 @@ const ExpPage = () => {
         Accelerator with Flexible Interconnects for DNN Training.
       </p>
       <CenterButton
-        href="https://www.intel.com/content/www/us/en/artificial-intelligence/posts/introducing-sigma.html"
-        variant="contained"
+        className={profileDesc}
+        href="https://github.com/scalesim-project/scale-sim-v2"
         color="primary"
         style={{}}
       >
-        SIGMA
+        SCALE Sim
       </CenterButton>
       <StaticImage
         alt="scale-sim"
@@ -50,13 +56,11 @@ const ExpPage = () => {
         restructured code to aid feature additions, and ease of distribution.
       </p>
       <CenterButton
-        className={profileDesc}
-        href="https://github.com/scalesim-project/scale-sim-v2"
-        variant="contained"
+        href="https://smartech.gatech.edu/handle/1853/64650"
         color="primary"
         style={{}}
       >
-        SCALE Sim
+        Thesis
       </CenterButton>
       <StaticImage
         alt="skyline"
@@ -68,14 +72,6 @@ const ExpPage = () => {
         Thesis on Investigating Opportunities and Challenges in Modeling and
         Designing Scale-Out DNN Accelerators
       </p>
-      <CenterButton
-        href="https://smartech.gatech.edu/handle/1853/64650"
-        variant="contained"
-        color="primary"
-        style={{}}
-      >
-        Thesis
-      </CenterButton>
     </div>
   );
 };
