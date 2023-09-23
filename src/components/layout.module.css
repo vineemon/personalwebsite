@@ -226,7 +226,7 @@ hr {
 
 a {
   padding: 0 2rem;
-  display: block;
+  display: flex;
   justify-content: center;
   color: white;
 }
