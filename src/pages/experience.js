@@ -1,11 +1,15 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import Button from "@material-ui/core/Button";
 import {
   container,
   siteTitle,
   profileDesc,
   profileImages,
 } from "../components/layout.module.css";
+import synergy from "../images/synergy.jpeg";
+import scaleSim from "../images/scalesim.png";
+import thesis from "../images/thesis.png";
 import { CenterButton } from "../components/styles";
 import Header from "../components/header";
 
@@ -24,12 +28,18 @@ const ExpPage = () => {
       >
         SIGMA
       </CenterButton>
-      <StaticImage
+      <CenterButton
+        style={{ }}
+        href="https://www.intel.com/content/www/us/en/artificial-intelligence/posts/introducing-sigma.html"
+      >
+        <img className={profileImages} src={synergy} alt="synergy" />
+      </CenterButton>
+      {/* <StaticImage
         alt="vineet"
         src="../images/synergy.jpeg"
         className={profileImages}
         style={{ objectFit: "contain" }}
-      />
+      /> */}
       <p className={profileDesc}>
         IEEE International Symposium on High-Performance Computer Architecture
         (HPCA) 2020 presented Best Paper Award to SIGMA: A Spare and Irregular
@@ -43,12 +53,12 @@ const ExpPage = () => {
       >
         SCALE Sim
       </CenterButton>
-      <StaticImage
-        alt="scale-sim"
-        src="../images/scalesim.png"
-        className={profileImages}
-        style={{ objectFit: "contain" }}
-      />
+      <CenterButton
+        style={{  }}
+        href="https://github.com/scalesim-project/scale-sim-v2"
+      >
+        <img className={profileImages} src={scaleSim} alt="scale-sim" />
+      </CenterButton>
       <p className={profileDesc}>
         SCALE Sim is a simulator for systolic array based accelerators for
         Convolution, Feed Forward, and any layer that uses GEMMs. This is a
@@ -62,12 +72,12 @@ const ExpPage = () => {
       >
         Thesis
       </CenterButton>
-      <StaticImage
-        alt="skyline"
-        src="../images/thesis.png"
-        className={profileImages}
+      <CenterButton
         style={{ objectFit: "contain" }}
-      />
+        href="https://smartech.gatech.edu/handle/1853/64650"
+      >
+        <img className={profileImages} src={thesis} alt="thesis" />
+      </CenterButton>
       <p className={profileDesc}>
         Thesis on Investigating Opportunities and Challenges in Modeling and
         Designing Scale-Out DNN Accelerators

@@ -169,9 +169,9 @@ a:active {
   margin-left: auto !important;
   margin-right: auto !important;
   border-radius: 2%;
-  height: 25%;
+  height: 100%;
   display: block !important;
-  width: 25% !important;
+  width: 100% !important;
   float: none !important;
 }
 
